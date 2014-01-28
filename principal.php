@@ -29,20 +29,9 @@
 
   <body>
 
-    <div class="container">
-
-      <div class="masthead">
-        <h3 class="text-muted">Alice Client</h3>
-        <ul class="nav nav-justified">
-          <li class="active"><a href="principal.php">Home</a></li>
-          <li><a href="videoSearch.php">Videos</a></li>
-          <li><a href="puntaje.php">mi perfil</a></li>
-          <li><a href="#">Descargas</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
-
-      <!-- Jumbotron -->
+  	<div class="container" id="navBarContainer"></div>
+    <div class="container" id="contentContainer">
+  <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>Bienvenido Juanito!</h1>
         <p class="lead">Puedes revisar como va tu puntaje en el siguiente link:</p>
@@ -50,7 +39,8 @@
       </div>
 
 
-
+	</div>
+	<div class="container">
       <!-- Site footer -->
       <div class="footer">
         <p> <a href="http://github.com/mleve/repositorium2-api"> With Repositorium technology </a> </p>
@@ -65,6 +55,14 @@
         <script src="js/jquery-1.10.2.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajaxHelper.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+		loadComponent("navBar.html",$("#navBarContainer"));
+		loadComponent("punctuation.html",$("#contentContainer"));
+	});
+    
+    </script>
   </body>
 </html>
 

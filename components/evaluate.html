@@ -1,0 +1,57 @@
+<div class="row">
+        <div class="col-md-3"><h3>Evaluación de videos<h3></div>
+        <div class="col-md-9"> <button id="ocultInst"type="button" class="btn btn-lg btn-info">Instrucciones</button></div>
+</div>
+      
+<div class="row" id="ocultable" style="display:none;">
+  <p> Se te presentaran hasta 4 videos, y debes decidir si estos cumplen o no con el criterio
+  descrito a continuación, el servidor sabe la clasificación de algunos de estos videos, pero
+  los nuevos son clasificados gracias a tus respuestas. <p>
+  <p> Una vez hecha la clasificación, haz click en Evaluar para evaluarla, si respondiste
+      correctamente, ganaras creditos y puntaje en este criterio! <p>
+</div>
+ 
+      <!-- Jumbotron -->
+<div class="jumbotron">
+  <h2>Hay al menos 3 escenas en addicion de las paginas de titulo y conclusión</h2>
+  
+  <p class="lead">El video incluye una escena de titulo,
+  conclusión, y al menos 3 escenas mas</p>
+  <div class="row">
+      <div class="col-md-6">
+          <p> Video 1</p>
+          <iframe width="420" height="315" src="//www.youtube.com/embed/Xiy6kTz-m_A" frameborder="0" allowfullscreen></iframe>
+          <p> Cumple el criterio? :
+          <label><input type="radio" name="cumple1" value="cumple1">Si</label>
+          <label><input type="radio" name="cumple1" value="cumple1">No</label>
+          </p>
+      </div>
+      <div class="col-md-6">
+          <p>Video 2</p>
+          <iframe width="420" height="315" src="//www.youtube.com/embed/Xiy6kTz-m_A" frameborder="0" allowfullscreen></iframe>
+          <p> Cumple el criterio? :
+          <label><input type="radio" name="cumple2" value="cumple1">Si</label>
+          <label><input type="radio" name="cumple2" value="cumple1">No</label>
+          </p>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <p> Video 3</p>
+          <iframe width="420" height="315" src="//www.youtube.com/embed/Xiy6kTz-m_A" frameborder="0" allowfullscreen></iframe>
+          <p> Cumple el criterio? :
+          <label><input type="radio" name="cumple3" value="cumple1">Si</label>
+          <label><input type="radio" name="cumple3" value="cumple1">No</label>
+          </p>
+      </div>
+      <div class="col-md-6">
+          <p>Video 4</p>
+          <iframe width="420" height="315" src="//www.youtube.com/embed/Xiy6kTz-m_A" frameborder="0" allowfullscreen></iframe>
+          <p> Cumple el criterio? :
+          <label><input type="radio" name="cumple4" value="cumple1">Si</label>
+          <label><input type="radio" name="cumple4" value="cumple1">No</label>
+          </p>
+      </div>
+  </div>
+   <p><a class="btn btn-lg btn-success" href="#" role="button">Evaluar</a></p>
+</div>
