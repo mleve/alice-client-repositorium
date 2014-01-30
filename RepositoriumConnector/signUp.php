@@ -2,7 +2,7 @@
 
 include_once 'curlHelper.php';
 
-$resp = make_post("http://localhost/repositorium2-api/api/v0.1/users", $_GET);
+$resp = make_post(UrlResolver::getUrl("signUp"), $_GET);
 
 $response = json_decode($resp);
 if(key_exists("error", $response))
