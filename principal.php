@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +27,6 @@
   </head>
 
   <body>
-
   	<div class="container" id="navBarContainer"></div>
     <div class="container" id="contentContainer">
   <!-- Jumbotron -->
@@ -58,7 +56,7 @@
     <script src="js/ajaxHelper.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-		loadComponent("navBar.html",$("#navBarContainer"));
+		loadComponent("navBar.php",$("#navBarContainer"));
 		loadComponent("punctuation.html",$("#contentContainer"));
 	});
     

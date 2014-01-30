@@ -1,19 +1,18 @@
 <div class="row">
 			<div class="col-md-4">
-				<form role="form" action="principal.php">
+				<form role="login" action="">
 					<h2 class="form-signin-heading">Please sign in</h2>
-					<input type="text" class="form-control" placeholder="Email address"
-						required autofocus> <input type="password" class="form-control"
-						placeholder="Password" required> <label class="checkbox"> <input
-						type="checkbox" value="remember-me"> Remember me
-					</label>
+					<input name="username" type="text" class="form-control" placeholder="username"
+						required autofocus> 
+					<input name="password" type="password" class="form-control"
+						placeholder="Password" required> 
 					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign
 						in</button>
 				</form>
 			</div>
 
 			<div class="col-md-8">
-				<form id="videoForm" role="form">
+				<form id="videoForm" role="signUp">
 					<h2 class="form-signin-heading">Eres nuevo?, registrate aquí!</h2>
 					<div class="input-group">
 						<label for="SignUpUsername" class="input-group-addon">Nombre de
@@ -71,3 +70,30 @@
 
 			</div>
 </div>
+<script type="text/javascript">
+	$(".btn").click(function(event){
+		event.preventDefault();
+		var form = $(this).parent();
+		var url = "";
+		if(form.attr("role") == "login")
+			url = "RepositoriumConnector/login.php"
+		else
+			url = "RepositoriumConnector/signUp.php"
+		var data = form.serialize();
+		$.ajax({
+			url : url,
+			data : data,
+			success : function(response){
+				var resp = JSON.parse(response);
+				if('error' in resp)
+					alert(resp.error);
+				else{
+					window.location = 'principal.php';
+					return false;		
+				}					
+			}
+		});
+
+		
+	});
+</script>

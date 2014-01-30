@@ -1,3 +1,4 @@
+<?php session_start();?>
 <div class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,7 +31,7 @@
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="">Bienvenido Juanito</a></li>
+            <li class="active"><a href="">Bienvenido <?php echo $_SESSION['user']->username;?></a></li>
             <li><a href="./">log out</a></li>
           </ul>
           
