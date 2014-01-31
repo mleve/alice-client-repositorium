@@ -1,7 +1,7 @@
 <?php
 
 include_once 'curlHelper.php';
-
+include_once 'urlResolver.php';
 $resp = make_post(UrlResolver::getUrl("signUp"), $_GET);
 
 $response = json_decode($resp);

@@ -2,10 +2,10 @@
 //Clase jugo mientras no se resuelva el tema de URL en buho, servira para hacer los cambios rapidamente
 class UrlResolver{
 	
-	private static $baseUrl = "http://buho.dcc.uchile.cl/~mleveron/repositorium2-api/api/";
-	//private static $baseUrl = "http://localhost/repositorium2-api/api/";
+	//private static $baseUrl = "http://buho.dcc.uchile.cl/~mleveron/repositorium2-api/api/";
+	private static $baseUrl = "http://localhost/repositorium2-api/api/";
 	private static $version = "v0.1/";
-	private static $login = "index.php?__route__=/users/login";
+	public static $login = "index.php?__route__=/users/login";
 	private static $signUp = "index.php?__route__=/users";
 	
 	public static function getUrl($case){
