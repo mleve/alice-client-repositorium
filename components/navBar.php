@@ -32,7 +32,7 @@
           
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="">Bienvenido <?php echo $_SESSION['user']->username;?></a></li>
-            <li><a href="./">log out</a></li>
+            <li><a href="./exit.php">log out</a></li>
           </ul>
           
         </div><!--/.nav-collapse -->
@@ -50,7 +50,7 @@ $("#navVideoEvaluate").click(function(event){
 
 $("#navVideoUpload").click(function(event){
    	event.preventDefault();
-   	loadComponent("videoUpload.html",$("#contentContainer"));
+   	loadComponent("videoUpload.php",$("#contentContainer"));
 });
 
 </script>

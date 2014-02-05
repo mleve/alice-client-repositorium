@@ -1,3 +1,12 @@
+<?php 
+	//Cargar todas las clases php utilitarias
+include_once 'RepositoriumConnector/curlHelper.php';
+include_once 'RepositoriumConnector/urlResolver.php';
+include_once 'components/utils.php';
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +17,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Justified Nav Template for Bootstrap</title>
+    <title>Alice Client for Repositorium</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">

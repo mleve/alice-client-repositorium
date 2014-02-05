@@ -1,4 +1,14 @@
+<?php 
+session_start();
+if(isset($_SESSION['user']))
+	header('Location: principal.php' );
+include_once 'RepositoriumConnector/curlHelper.php';
+include_once 'RepositoriumConnector/urlResolver.php';
+include_once 'components/utils.php';
 
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
